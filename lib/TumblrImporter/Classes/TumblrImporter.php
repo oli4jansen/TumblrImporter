@@ -4,7 +4,7 @@
 *	By Olivier Jansen
 */
 
-class Tumblr_Importer {
+class TumblrImporter {
 
 	protected $publicKey = '';
 	protected $client = '';
