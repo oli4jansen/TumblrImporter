@@ -1,0 +1,30 @@
+{
+    "name": "oli4jansen/tumblrimporter",
+    
+    "version": "0.0.1",
+
+    "description": "Class for importing Tumblr Blog to Thimble",
+
+    "homepage": "https://github.com/oli4jansen/TumblrImporter",
+
+	"authors": [
+		{
+			"name": "Olivier Jansen",
+			"email": "oli4jansen.nl@gmail.com",
+			"homepage": "https://github.com/oli4jansen",
+			"role": "developer"
+		}
+	],
+	  
+	"type": "library",
+	  
+	"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+	  
+    "require": {
+    	"tumblr/tumblr": "*",
+    }
+    
+	"autoload": {
+		"psr-0": { "TumblrImporter\\Classes\\": "lib/" }
+	},
+}
