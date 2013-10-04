@@ -23,6 +23,6 @@
     },
     
 	"autoload": {
-		"psr-0": { "TumblrImporter\\Classes\\": "lib/" }
+		"psr-0": { "TumblrImporter\\": "lib/" }
 	}
 }
