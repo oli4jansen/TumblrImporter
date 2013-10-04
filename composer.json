@@ -1,8 +1,6 @@
 {
     "name": "oli4jansen/tumblrimporter",
     
-    "version": "0.0.1",
-
     "description": "Class for importing Tumblr Blog to Thimble",
 
     "homepage": "https://github.com/oli4jansen/TumblrImporter",
