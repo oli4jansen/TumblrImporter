@@ -15,9 +15,7 @@ class Importer {
 	public function __construct($publicKey)
 	{
 		$this->publicKey = $publicKey;
-		
-		$client = new Tumblr\API\Client($this->publicKey);
-		$this->client = $client;
+		$this->client = new \Tumblr\API\Client($this->publicKey);
 	}
 	
 	public function importBlog($domain, $location)
@@ -239,14 +237,14 @@ class Importer {
 				$postArray['Question'] = $post->question;
 				$postArray['Answer'] = $post->answer;
 				$postArray['Asker'] = $post->asking_name;
-				$postArray['AskerPortraitURL-16'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 16);
-				$postArray['AskerPortraitURL-24'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 24);
-				$postArray['AskerPortraitURL-30'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 30);
-				$postArray['AskerPortraitURL-40'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 40);
-				$postArray['AskerPortraitURL-48'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 48);
-				$postArray['AskerPortraitURL-64'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 64);
-				$postArray['AskerPortraitURL-96'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 96);
-				$postArray['AskerPortraitURL-128'] = $client->getBlogAvatar($post->asking_name.'.tumblr.com', 128);
+				$postArray['AskerPortraitURL-16'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 16);
+				$postArray['AskerPortraitURL-24'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 24);
+				$postArray['AskerPortraitURL-30'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 30);
+				$postArray['AskerPortraitURL-40'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 40);
+				$postArray['AskerPortraitURL-48'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 48);
+				$postArray['AskerPortraitURL-64'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 64);
+				$postArray['AskerPortraitURL-96'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 96);
+				$postArray['AskerPortraitURL-128'] = $this->client->getBlogAvatar($post->asking_name.'.tumblr.com', 128);
 				break;
 				
 			default:
