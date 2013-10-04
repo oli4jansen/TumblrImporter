@@ -22,9 +22,9 @@
 	  
     "require": {
     	"tumblr/tumblr": "*",
-    }
+    },
     
 	"autoload": {
 		"psr-0": { "TumblrImporter\\Classes\\": "lib/" }
-	},
+	}
 }
