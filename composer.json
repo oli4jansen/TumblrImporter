@@ -21,7 +21,7 @@
 	"license": "Apache-2.0",
 	  
     "require": {
-    	"tumblr/tumblr": "*",
+    	"tumblr/tumblr": "*"
     },
     
 	"autoload": {
